@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin tức</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="text/javascript" src="script.js"></script>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <div id="ADS" class="container-top">
+    Sữa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa
+    của các vi khuẩn. Hầu hết các loại sữa đều có thể dùng làm sữa chua,
+    tuy nhiên sữa bò là được dùng nhiều hơn hết. Sữa chua hay được gọi
+    là yaourt (là da-ua). Chúng được lên men từ sữa động vật nhờ vi
+    khuẩn lactic, đã được khử chất béo và thanh trùng ở nhiệt độ 80 - 90
+    độ C.Sữa chua có 2 loại cơ bản là sữa chua có đường và sữa chua
+    không đường.
+  </div>
+  <div id="hotnews" class="news">
+    Khuyến mãi ............................
+  </div>
+  <script>
+    if($("window").width() < 1000){
+      $("#ADS").removeClass();
+      console.log("Dung quang cao nam");
+      $("#ADS").addClass("container-botom");
+    }else{
+      console.log("Dung quang cao dung");
+    }
+  </script>
 <body>
   <header>
     <img src="/data/images/logo.png" />
