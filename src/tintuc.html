@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="/data/images/logo.png" />
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="tintuc.html">Tin tức</a>
+      <a href="dangnhap.html">Đăng nhập</a>
+      <a href="dangky.html">Đăng ký</a>
+      <a href="lienhe.html">Liên hệ</a>
+      <img id="header-img1" src="/data/images/header-img1.png" alt="" />
+      <img id="header-img2" src="/data/images/header-img2.png" alt="" />
+      <img id="header-img3" src="/data/images/header-img3.png" alt="" />
+      <form action="timkiem.html" method="get" class="search-container" name="frm-search" >
+        <input id="timkiem" name="words" type="text" placeholder="Nhap thong tin" onkeypress="checkKey(e)"/>
+        <a class="icon-white" onclick="clickShoping()">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a id="search" class="icon-pink" onclick="doSearch()" >
+          <i  class="fas fa-search"></i>
+
+        </a>
+        
+      </form>
+    </nav>
+  </header>
+    <main>
+        <article class="tin-tuc">
+            <section class="tin-tuc-left">
+                <section>
+                    <h1 id="tin-tuc-h1">ĐƯỢC QUAN TÂM</h1>
+                    <img src="/data/images/tintuc/hotnews.jpg" alt="">
+                </section>
+                <section>
+                    <h2>KHAI TRƯƠNG HÂN HOAN - ƯU ĐÃI NGẬP TRÀNG</h2>
+                    <p>Khai trương hân hoan - ưu đã ngập tràng. Thêm một ngôi nhà mới cho sữa chua Freeeze được khai trương. <a href="#">Xem chi tiết</a></p>
+                </section>
+            </section>  
+            
+            <section class="tin-tuc-right">
+                <h1>TIN TỨC</h1>
+                <h2>LỘ DIỆN SIÊU NĂNG LỰC TỪ TRÁI XOÀI</h2>
+                <section class="tin-tuc-right-S">
+                    <p class="tin-tuc-p-left">Xoài là một trong những cây ăn trái chủ lực của đồng bằng sông Cửu Long (ĐBSCL), 
+                        chiếm khoảng 48% tổng diện tích xoài cả nước. Trong đó, tỉnh Đồng Tháp hiện có diện 
+                        tích trồng xoài khoảng 12.171ha - lớn nhất vùng ĐBSCL với sản lượng hàng năm gần 124
+                         ngàn tấn <a href="#">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news1.jpg" alt="">
+                </section> 
+                <h2>SỮA CÁC LOẠI HẠT-MÓN NGON CHO HỆ MIỄN DỊCH KHỎE</h2>
+                <section class="tin-tuc-right-S">
+                    <p class="tin-tuc-p-left">
+                        Các loại sữa hạt càng ngày trở nên quen thuộc với mọi người, bởi hàm lượng dinh dưỡng cao,
+                         và lành tính. Với thị trường sữa hạt đa dạng phong phú, hôm nay chúng ta cùng điểm qua xem
+                          có các loại sữa hạt nào, và loại nào là bổ dưỡng nhất cho sức khỏe?<a href="#">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news2.jpg" alt="">
+                </section> 
+                <h2>SỮA CHUA KIWI - MÓN QUÀ CHO SỨC KHỎE</h2>
+                <section class="tin-tuc-right-S">
+                    
+                    
+                    <p class="tin-tuc-p-left">
+                        Kiwi thành phần dinh dưỡng rất cao so với các loại hoa quả khác. Hàm lượng vitamin C cao cho hệ
+                         miễn dịch khỏe mạnh cùng nguồn chất xơ hỗ trợ hệ tiêu hóa. Siêu quả Kiwi cho cả nhà siêu khỏe, 
+                         100% Vitamin C cần thiết mỗi ngày.<a href="#">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news3.jpg" alt="">
+                </section>
+                <h2>RA MẮT APP SỮA CHUA Freeeze TRÊN NỀN TẢNG IOS</h2>
+                <section class="tin-tuc-right-S">
+                    
+                    
+                    <p class="tin-tuc-p-left">
+                        Nhằm mang đến cho tất cả khách hàng những trải nghiệm thú vị nhất Công ty Sữa Chua Freeeze
+                        giới thiệu app đặt hàng độc đáo, giúp khách hàng mua sắm được mọi lúc mọi nơi với nhiều tiện ích.
+                        <a href="#">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news4.jpg" alt="">
+                </section>
+                <h2>ĐĂNG KÍ THÀNH VIÊN - NHẬN NGAY ƯU ĐÃI</h2>
+                <section class="tin-tuc-right-S">
+                    
+                    
+                    <p class="tin-tuc-p-left">
+                        Công ty sữa chua hân hạnh mang đến chương trình "Đăng Ký Thành Viên" với nhiều ưu đãi độc đáo. 
+                        Member Card – thẻ thành viên nhà Sữa Chua Freeeze dành cho tất cả khách hàng đăng kí tài khoản 
+                        và phát sinh đơn hàng.<a href="#">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news5.jpg" alt="">
+                </section>
+                <h2>TUYỂN GIÁM SÁT CHUỖI CỬA HÀNG</h2>
+                <section class="tin-tuc-right-S">
+                   
+                    <p class="tin-tuc-p-left">
+                        Công ty sữa chua hân hạnh mang đến chương trình "Đăng Ký Thành Viên" với nhiều ưu đãi độc đáo. 
+                        Member Card – thẻ thành viên nhà Sữa Chua Freeeze dành cho tất cả khách hàng đăng kí tài khoản và 
+                        phát sinh đơn hàng.<a href="3">Xem chi tiết</a>
+                    </p>
+                    <img class="tin-tuc-img-right" src="/data/images/tintuc/news6.jpg" alt="">
+                </section>
+            </section>
+            
+            
+        </article>
+    </main>
+    <footer>
+      <section class="social-icon">
+        &copy; 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </section>
+      <section class="gotop">
+        <a href="#top"
+          ><img height="20px" width="20px" src="/data/images/top.png"
+        /></a>
+      </section>
+    </footer>
+</body>
+</html>

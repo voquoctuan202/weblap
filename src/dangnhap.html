@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="/data/images/logo.png" />
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="tintuc.html">Tin tức</a>
+      <a href="dangnhap.html">Đăng nhập</a>
+      <a href="dangky.html">Đăng ký</a>
+      <a href="lienhe.html">Liên hệ</a>
+      <img id="header-img1" src="/data/images/header-img1.png" alt="" />
+      <img id="header-img2" src="/data/images/header-img2.png" alt="" />
+      <img id="header-img3" src="/data/images/header-img3.png" alt="" />
+      <form action="timkiem.html" method="get" class="search-container" name="frm-search" >
+        <input id="timkiem" name="words" type="text" placeholder="Nhap thong tin" onkeypress="checkKey(e)"/>
+        <a class="icon-white" onclick="clickShoping()">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a id="search" class="icon-pink" onclick="doSearch()" >
+          <i  class="fas fa-search"></i>
+
+        </a>
+        
+      </form>
+    </nav>
+  </header>
+    <main>
+            <h1>Đăng nhập</h1>
+            <section class="dang-nhap" >
+                <img id= "img-dang-nhap" src="/data/images/dangnhap/userlogin.png" alt="" width="30%" height="50%">
+                <form onsubmit="return loginValidate(this);" action="#" method="post" name="frm" style="max-width:500px;margin:auto" enctype="application/x-www-form-urlencoded">
+          
+                  <div class="input-container">
+                    <i class="fa fa-envelope icon-white"></i>
+                    <input class="input-field" type="text" placeholder="Nhập email" name="email">
+                    <br>
+                    <i class="fa fa-key icon-white"></i>
+                    <input class="input-field" type="password" placeholder="Nhập mật khẩu" name="psw">
+                  </div>
+                  <span>Bạn quên <a href="#">Mật Khẩu?</a></span>
+                        <span >
+                        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ cho lần đăng nhập sau
+                        </span >
+                      <button type="submit" class="btn">Đăng Nhập</button>
+                      <button type="reset" class="btn">Hủy</button>
+                </form>		
+            </section>
+    </main>
+    <footer>
+     
+        <p>
+          &copy; 2021 Bản quyền thuộc về FreeezeVN.
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#top"
+            ><img height="20px" width="20px" src="/data/images/top.png"
+          /></a>
+        </p>
+      </footer>
+</body>
+</html>
