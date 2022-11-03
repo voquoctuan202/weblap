@@ -35,19 +35,19 @@
   <header>
     <img src="/data/images/logo.png" />
     <nav>
-      <a href="trangchu.html">Trang chủ</a>
-      <a href="gioithieu.html">Giới thiệu</a>
-      <a href="sanpham.html">Sản phẩm</a>
-      <a href="tintuc.html">Tin tức</a>
-      <a href="dangnhap.html">Đăng nhập</a>
-      <a href="dangky.html">Đăng ký</a>
-      <a href="lienhe.html">Liên hệ</a>
+      <a href="trangchu.html" target="_blank">Trang chủ</a>
+      <a href="gioithieu.html" target="_blank">Giới thiệu</a>
+      <a href="sanpham.html" target="_blank">Sản phẩm</a>
+      <a href="tintuc.html" target="_blank">Tin tức</a>
+      <a href="dangnhap.html" target="_blank">Đăng nhập</a>
+      <a href="dangky.html" target="_blank">Đăng ký</a>
+      <a href="lienhe.html" target="_blank">Liên hệ</a>
       <img id="header-img1" src="/data/images/header-img1.png" alt="" />
       <img id="header-img2" src="/data/images/header-img2.png" alt="" />
       <img id="header-img3" src="/data/images/header-img3.png" alt="" />
       <form action="timkiem.html" method="get" class="search-container" name="frm-search" >
         <input id="timkiem" name="words" type="text" placeholder="Nhap thong tin" onkeypress="checkKey(e)"/>
-        <a class="icon-white" onclick="clickShoping()">
+        <a class="icon-white" onclick="openCart()">
           <i class="fas fa-shopping-cart"></i>
         </a>
         <a id="search" class="icon-pink" onclick="doSearch()" >
@@ -59,29 +59,45 @@
     </nav>
   </header>
     <main>
-            <h1>Đăng nhập</h1>
-            <section class="dang-nhap" >
-                <img id= "img-dang-nhap" src="/data/images/dangnhap/userlogin.png" alt="" width="30%" height="50%">
-                <form onsubmit="return loginValidate(this);" action="#" method="post" name="frm" style="max-width:500px;margin:auto" enctype="application/x-www-form-urlencoded">
-          
-                  <div class="input-container">
-                    <i class="fa fa-envelope icon-white"></i>
-                    <input class="input-field" type="text" placeholder="Nhập email" name="email">
-                    <br>
-                    <i class="fa fa-key icon-white"></i>
-                    <input class="input-field" type="password" placeholder="Nhập mật khẩu" name="psw">
-                  </div>
-                  <span>Bạn quên <a href="#">Mật Khẩu?</a></span>
-                        <span >
-                        <input type="checkbox" checked="checked" name="remember"> Ghi nhớ cho lần đăng nhập sau
-                        </span >
-                      <button type="submit" class="btn">Đăng Nhập</button>
-                      <button type="reset" class="btn">Hủy</button>
-                </form>		
-            </section>
+        <h1>LIÊN HỆ</h1>
+        <img src="/data/images/lienhe/check-in.png" alt="">
+        
+        <p><i class="fa-location-arrow"></i><b>Địa chỉ: 0123, Tòa nhà ABC, Tp. Cần Thơ.</b> Nếu bạn có gì góp ý, xin hãy liên hệ qua hộp thư điện tử hoặc điền vào biểu mẫu bên dưới. Xin cảm ơn</p>
+        <h1>Góp ý</h1>
+        <form class="gop-y" onsubmit="return checkFormLienHe(this);" action="#" method="post" name="frw" >
+          <table>
+              <tr>
+
+                  <td><i class="far fa-user"></i> Họ tên:</td>
+                  <td><input type="text" placeholder="Vui lòng nhập tên" name="hoten"></td>
+              </tr>
+              <tr>
+                  <td><i class="fa-mail-bulk"></i>Email:</td>
+                  <td><input type="text" placeholder="Vui lòng nhập email" name="email"></td>
+              </tr>
+              <tr>
+                  <td>Chủ đề:</td>
+                  <td> <select name="" id="">
+                      <option value="SPDV">Về sản phẩm/dịch vụ</option>
+                      <option value="UDTV">Về ưu đãi/thành viên</option>
+                      <option value="TD">Về tin tuyển dụng</option>
+
+                  </select></td>
+              </tr>
+              <tr>
+                  <td>Nội dung: </td>
+              </tr>
+              <tr>
+                  <td colspan="2"><textarea name="text" id="" cols="30" rows="10"></textarea></td>
+                  
+              </tr>
+              <tr>
+                  <td align="center" colspan="2"><input type="submit" value="Gửi"></td>
+              </tr>
+          </table>
+        </form>
     </main>
     <footer>
-     
         <p>
           &copy; 2021 Bản quyền thuộc về FreeezeVN.
           <a href="#"><i class="fab fa-facebook-f"></i></a>

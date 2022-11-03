@@ -23,7 +23,7 @@
     Khuyến mãi ............................
   </div>
   <script>
-    if($("window").width() < 1000){
+    if(window.innerWidth < 1000){
       $("#ADS").removeClass();
       console.log("Dung quang cao nam");
       $("#ADS").addClass("container-botom");
@@ -35,19 +35,19 @@
     <header>
       <img src="/data/images/logo.png" />
       <nav>
-        <a href="trangchu.html">Trang chủ</a>
-        <a href="gioithieu.html">Giới thiệu</a>
-        <a href="sanpham.html">Sản phẩm</a>
-        <a href="tintuc.html">Tin tức</a>
-        <a href="dangnhap.html">Đăng nhập</a>
-        <a href="dangky.html">Đăng ký</a>
-        <a href="lienhe.html">Liên hệ</a>
+        <a href="trangchu.html" target="_blank">Trang chủ</a>
+        <a href="gioithieu.html" target="_blank">Giới thiệu</a>
+        <a href="sanpham.html" target="_blank">Sản phẩm</a>
+        <a href="tintuc.html" target="_blank">Tin tức</a>
+        <a href="dangnhap.html" target="_blank">Đăng nhập</a>
+        <a href="dangky.html" target="_blank">Đăng ký</a>
+        <a href="lienhe.html" target="_blank">Liên hệ</a>
         <img id="header-img1" src="/data/images/header-img1.png" alt="" />
         <img id="header-img2" src="/data/images/header-img2.png" alt="" />
         <img id="header-img3" src="/data/images/header-img3.png" alt="" />
         <form action="timkiem.html" method="get" class="search-container" name="frm-search" >
           <input id="timkiem" name="words" type="text" placeholder="Nhap thong tin" onkeypress="checkKey(e)"/>
-          <a class="icon-white" onclick="clickShoping()">
+          <a class="icon-white" onclick="openCart()">
             <i class="fas fa-shopping-cart"></i>
           </a>
           <a id="search" class="icon-pink" onclick="doSearch()" >

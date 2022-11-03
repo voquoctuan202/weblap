@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Đơn hàng</title>
+</head>
+<body>
+  <header>
+    <img src="/data/images/logo.png" />
+    <nav>
+      <a href="trangchu.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="tintuc.html">Tin tức</a>
+      <a href="dangnhap.html">Đăng nhập</a>
+      <a href="dangky.html">Đăng ký</a>
+      <a href="lienhe.html">Liên hệ</a>
+      <img id="header-img1" src="/data/images/header-img1.png" alt="" />
+      <img id="header-img2" src="/data/images/header-img2.png" alt="" />
+      <img id="header-img3" src="/data/images/header-img3.png" alt="" />
+      <form action="timkiem.html" method="get" class="search-container" name="frm-search" >
+        <input id="timkiem" name="words" type="text" placeholder="Nhap thong tin" onkeypress="checkKey(e)"/>
+        <a class="icon-white" onclick="clickShoping()">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a id="search" class="icon-pink" onclick="doSearch()" >
+          <i  class="fas fa-search"></i>
+
+        </a>
+        
+      </form>
+    </nav>
+  </header> <header>
+        <img src="/data/images/logo.png" />
+        <nav>
+          <a href="trangchu.html" target="_blank">Trang chủ</a>
+          <a href="gioithieu.html" target="_blank">Giới thiệu</a>
+          <a href="sanpham.html" target="_blank">Sản phẩm</a>
+          <a href="tintuc.html" target="_blank">Tin tức</a>
+          <a href="dangnhap.html" target="_blank">Đăng nhập</a>
+          <a href="dangky.html" target="_blank">Đăng ký</a>
+          <a href="lienhe.html" target="_blank">Liên hệ</a>
+          <img id="header-img1" src="/data/images/header-img1.png" alt="" />
+          <img id="header-img2" src="/data/images/header-img2.png" alt="" />
+          <img id="header-img3" src="/data/images/header-img3.png" alt="" />
+          <form action="timkiem.html" method="GET" class="search-container">
+            <input id="tim-kiem" type="text" placeholder="Nhap thong tin" onkeydown="formCheck()" />
+            <a class="icon-white">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a id="search" class="icon-pink" onclick="clickSearch()" >
+                <i  class="fas fa-search"></i>
+    
+              </a>
+            
+          </form>
+        </nav>
+      </header>
+      <main class="one-col">
+        <article class="donhang">
+          <h1>Chi Tiết Đơn Hàng</h1>
+          <table id="cartDetail" border=1 width="100%">
+          <thead>
+            <tr>
+              <th>Hình SP</th> <th>Tên SP</th>
+              <th>Số lượng</th> <th>Giá</th> <th>Thành Tiền</th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr><td colspan="6" align="right">Tổng thành tiền (A) = <span id="bill_pre_tax_total"></span></td></tr>
+            <tr><td colspan="6" align="right">Chiết Khấu (B) = <span  id="bill_discount"></span> </td></tr>
+            <tr><td colspan="6" align="right">Thuế (C) = 10% x (A - B) = <span id="bill_tax"></span> </td></tr>
+            <!-- Trang 5 -->
+            <tr><td colspan="6" align="right">Tổng đơn hàng = A - B + C = <span id="bill_total"></span> </td></tr>
+            <tr><td colspan="6" align="center"> <button type="submit">Xác Nhận Đơn Hàng</button></td></tr>
+          </tfoot>
+          </table>
+        </article>
+        <script>
+          showCart();
+        </script>
+      </main>
+    <footer>
+        <p>
+            &copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#top"
+              ><img height="20px" width="20px" src="/data/images/top.png"
+            /></a>
+          </p>
+    </footer>
+</body>
+</html>

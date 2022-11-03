@@ -1,4 +1,5 @@
 ﻿body {
+	position: relative;
 	max-width: 1024px;	
 	margin: 0 auto;
 	font: 1.2em Helvetica, arial, sans-serif;
